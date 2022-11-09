@@ -1,8 +1,46 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Home Accountant";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<div class="display-3">Incoming</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>UserName</th>
+            <th>Reason</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@DateTime.Now.AddDays(-15)</td>
+            <td>Timur</td>
+            <td>Salary</td>
+            <td>$3000</td>
+        </tr>
+        ...
+    </tbody>
+</table>
+<div class="display-3">Expensive</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>UserName</th>
+            <th>Category</th>
+            <th>Amount</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>@DateTime.Now.AddDays(-2)</td>
+            <td>Timur</td>
+            <td>Food</td>
+            <td>$50</td>
+        </tr>
+        ...
+    </tbody>
+</table>
+
+
