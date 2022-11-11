@@ -6,7 +6,7 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace HomeAccountant.CompositionRoot;
 
-public class CompositionRoot
+public class CollectionCompositionRoot
 {
     public static void RegisterMockLayers(IServiceCollection services)
     {

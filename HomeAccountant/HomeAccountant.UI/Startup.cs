@@ -1,4 +1,6 @@
-﻿namespace HomeAccountant.UI;
+﻿using HomeAccountant.CompositionRoot;
+
+namespace HomeAccountant.UI;
 
 public class Startup
 {
@@ -7,6 +9,8 @@ public class Startup
         services.AddRazorPages();
         services.AddServerSideBlazor();
         services.AddHttpClient(Microsoft.Extensions.Options.Options.DefaultName);
+
+        CollectionCompositionRoot.RegisterMockLayers(services);
     }
 
     public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
